@@ -53,23 +53,7 @@
 
   <div class="container">
 
-    {% if args['email'] %}
-    
-    <h1> Bienvenido: {{args['email']}}</h1>
-
-    {% else %}
-    
-    <form class="form-signin" method="post">
-      <h2 class="form-signin-heading">Iniciar Sesión</h2>
-      <label for="email" class="sr-only">Correo Electrónico</label>
-      <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required autofocus>
-      <label for="password" class="sr-only">Contraseña</label>
-      <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" >Iniciar Sesión</button>
-    </form>
-
-    {% endif %}
-
+     <h1> Bienvenido: {{args['email']}}</h1>
 
   </div>
 

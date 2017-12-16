@@ -22,4 +22,6 @@ $app->get('/json/{name}', '\Controllers\Frondend\Index:Json');
 
 $app->group('/admin', function () use ($app) {
 	$app->map(['GET', 'POST'], '', '\Controllers\Backend\Index');
-});
+	$app->map(['GET', 'POST'], '/login', '\Controllers\Backend\Index:Login');
+	$app->map(['GET', 'POST'], '/salir', '\Controllers\Backend\Index:Salir');
+})->add($SesionAdmin);
